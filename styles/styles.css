@@ -149,6 +149,7 @@ header a {
 .vh-max {
   height: 100vh;
 }
+
 ul {
   padding: 0 0 0 1rem;
 }
@@ -160,10 +161,10 @@ ul {
   object-fit: cover;
 }
 
-.row-reverse{
-    flex-direction: row-reverse;
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .text-caps {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
