@@ -12,9 +12,7 @@ h4,
 h5,
 h6,
 p,
-blockquote,
 a,
-img,
 strong,
 center,
 dl,
@@ -32,17 +30,12 @@ tr,
 th,
 td,
 article,
-aside,
-canvas,
-details,
-figure,
-figcaption,
 footer,
 header,
 menu,
 nav,
-output,
-section {
+section,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -50,6 +43,7 @@ section {
   font-weight: 400;
   vertical-align: baseline;
   line-height: 1.45;
+  box-sizing: border-box;
 }
 
 article,
@@ -66,106 +60,76 @@ section {
   display: block;
 }
 
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  background-color: #333;
-}
-
-header {
-  color: #fff;
-  text-align: center;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
+.wrapper {
+  width: 100%;
+  padding: 0;
 }
 
 .inner-wrapper {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 20px 1rem;
+  padding: 0 1.25rem;
+  background: #fefefe;
 }
 
-.nav {
+.header-section {
   display: flex;
+  gap: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #ca3433;
+  color: #fefefe;
 }
 
-.site-title {
-  font-size: 1.5rem;
+.site-nav {
+  background-color: #b80f0a;
+  padding: 1rem;
+}
+
+.site-nav a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.menu-wrapper {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.section-wrapper {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+}
+
+.bg-color-1 {
+  background-color: #eeefee;
+}
+
+.col {
+  width: 50%;
+}
+
+.col p {
+  margin-bottom: 1rem;
 }
 
 .page-title {
-  font-size: 3rem;
-}
-
-.container ul {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-
-.default-padding {
-  padding: 3rem 1rem;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.flex-row {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-around;
-  background-color: #f9f9f9;
-}
-
-.col-50 {
-  max-width: 50%;
-}
-
-.vh-max {
-  height: 100vh;
-}
-
-ul {
-  padding: 0 0 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .portrait {
-  border-radius: 0.5rem;
-  height: 300px;
-  width: 300px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  aling-items: center;
   object-fit: cover;
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
-.text-caps {
-  text-transform: uppercase;
 }
