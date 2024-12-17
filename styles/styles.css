@@ -60,6 +60,10 @@ section {
   display: block;
 }
 
+body {
+  background-color: #333;
+}
+
 .wrapper {
   width: 100%;
   padding: 0;
@@ -79,6 +83,7 @@ section {
   justify-content: space-between;
   align-items: center;
   color: #fefefe;
+  border-radius: 0 0 0.15rem 0.15rem;
 }
 
 .site-nav {
@@ -106,6 +111,42 @@ section {
   gap: 1.25rem;
   justify-content: space-between;
   padding: 3rem 1.5rem;
+  border-radius: 0.15rem;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .row-reverse {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .col {
+    width: 100% !important;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-title {
+    font-size: 2rem;
+    margin-bottom: -0.5rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .section-wrapper {
+    border-radius: 0;
+  }
+
+  .header-section {
+    border-radius: 0;
+  }
 }
 
 .bg-color-1 {
@@ -121,6 +162,12 @@ section {
 }
 
 .page-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.section-title {
   margin-bottom: 1rem;
 }
 
@@ -132,4 +179,8 @@ section {
   display: flex;
   aling-items: center;
   object-fit: cover;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
