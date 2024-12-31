@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website Project</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/index.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/success.js"></script>
   </head>
   <body>
     <header class="wrapper">
@@ -32,24 +33,17 @@
       </div>
     </section>
     <section>
-      <div
-        class="inner-wrapper section-wrapper bg-color-1">
-          <form class="contact-form">
-            <textarea name="message" rows="4" placeholder="Add your comment here..."></textarea>
-            <input
-              type="text"
-              id="first"
-              name="first"
-              placeholder="First name"
-            />
-            <input
-              type="text"
-              id="last"
-              name="last"
-              placeholder="Last name"
-            />
-            <input type="submit" value="Submit" />
-          </form>
+      <div class="inner-wrapper section-wrapper bg-color-1">
+        <form id="form" class="contact-form">
+          <input type="text" id="first" name="first" placeholder="First name" />
+          <input type="text" id="last" name="last" placeholder="Last name" />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Add your comment here..."
+          ></textarea>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
       </div>
     </section>
   </body>
